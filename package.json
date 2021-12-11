@@ -2,16 +2,38 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "raycast-quick-search",
   "title": "Quick Search",
-  "description": "Quick search selected text or clipboard text via Google or Github or DeepL etc.",
+  "icon": "icon.png",
+  "description": "Quickly search selected text or clipboard text via Google or Github or DeepL etc.",
   "author": "iwfan",
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
-      "title": "Share Secret",
-      "subtitle": "Doppler",
-      "description": "Share sensitive data (a \"secret\") with friends, teammates, or strangers on the internet.",
-      "mode": "view"
+      "name": "google-search",
+      "title": "Google Search",
+      "subtitle": "Search selected text or clipboard text via Google.",
+      "description": "Search selected text or clipboard text via Google.",
+      "mode": "no-view"
+    },
+    {
+      "name": "github-search",
+      "title": "Github Search",
+      "subtitle": "Search selected text or clipboard text via Github.",
+      "description": "Search selected text or clipboard text via Github.",
+      "mode": "no-view"
+    },
+    {
+      "name": "github-repo",
+      "title": "Github Repo",
+      "subtitle": "Search selected text or clipboard text via Github repo.",
+      "description": "Search selected text or clipboard text via Github repo.",
+      "mode": "no-view"
+    },
+    {
+      "name": "deepl-trans",
+      "title": "Deepl Translation",
+      "subtitle": "Translate selected text or clipboard text via DeepL",
+      "description": "Translate selected text or clipboard text via DeepL",
+      "mode": "no-view"
     }
   ],
   "scripts": {
@@ -21,7 +43,8 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@raycast/api": "^1.26.2"
+    "@raycast/api": "^1.26.2",
+    "run-applescript": "^6.0.0"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
